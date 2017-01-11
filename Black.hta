@@ -1,0 +1,139 @@
+<html>
+ <head>
+   <title>
+     PDF Baseline Copy (Powershell)
+    </title>
+       
+   <HTA:APPLICATION ID="FUM"
+      APPLICATIONNAME="Utility Menu"  
+      SHOWINTASKBAR="yes"
+      MAXIMIZEBUTTON="yes"
+      MINIMIZEBUTTON="yes"
+      SINGLEINSTANCE="yes"
+      WINDOWSIZE="small"
+      BORDERSTYLE="raised"
+      INNERBORDER="yes"
+      BORDER="thick"
+      ICON="black.ico"
+      SCROLL="no" />
+
+<script language="javascript">  
+ window.resizeTo(300,450); 
+ window.moveTo((screen.width/2)-175,(screen.height/2)-325); 
+ </script>
+
+<script language="VBScript">
+<!--   
+
+Sub Button1s_OnClick
+        
+        set objShell = CreateObject( "WScript.Shell" )      
+        lngReturn = objShell.Run ("c:\clone\Black\Allpdf.bat", 1, 1)
+        set objShell = Nothing
+      
+End Sub
+
+Sub Button2s_OnClick
+
+        set objShell = CreateObject( "WScript.Shell" )      
+        lngReturn = objShell.Run ("C:\clone\Black\hazpdf.bat", 1, 1)
+        set objShell = Nothing
+End Sub
+
+Sub Button3s_OnClick
+
+        set objShell = CreateObject( "WScript.Shell" )      
+        lngReturn = objShell.Run ("c:\clone\black\hbgpdf.bat", 1, 1)
+        set objShell = Nothing
+End Sub
+
+Sub Button4s_OnClick
+
+        set objShell = CreateObject( "WScript.Shell" )      
+        lngReturn = objShell.Run ("c:\clone\black\lancpdf.bat", 1, 1)
+        set objShell = Nothing
+End Sub
+
+Sub Button5s_OnClick
+
+        set objShell = CreateObject( "WScript.Shell" )      
+        lngReturn = objShell.Run ("c:\clone\black\lehpdf.bat", 1, 1)
+        set objShell = Nothing
+End Sub
+
+Sub Button6s_OnClick
+
+        set objShell = CreateObject( "WScript.Shell" )      
+        lngReturn = objShell.Run ("c:\clone\black\rdgpdf.bat", 1, 1)
+        set objShell = Nothing
+End Sub
+
+Sub Button7s_OnClick
+
+        set objShell = CreateObject( "WScript.Shell" )      
+        lngReturn = objShell.Run ("c:\clone\black\westpdf.bat", 1, 1)
+        set objShell = Nothing
+End Sub
+//-->
+
+</script>   
+</head>
+
+<body bgcolor="#000000">
+<div align="center">
+<table border="1" bgcolor="#df3a01" width="60%">
+ <tr>
+  <td>
+    <h3 align="center"><font color="#000000">PDF Baseline Copy (Powershell)</font><HR>
+   
+   <form>
+   <div align="center">
+   <table border="0" ?
+    <tr>
+     <td align="center">
+       <strong><font STYLE="color: #000000;background-color: #df3a01;width: 50%;">START</font><strong>
+     </td>
+    </tr>
+    <tr>   
+     <td align="left"><input name="Button1s" type="button" value="ALL.dat" STYLE="background:009900;width: 100%;" STYLE="color:FFFFFF"> 
+     </td>
+    </tr>
+    <tr>   
+     <td align="left"><input name="Button2s" type="button" value="HAZ.dat" STYLE="background:009900;width: 100%;" STYLE="color:FFFFFF"> 
+     </td>
+    </tr>
+    <tr>   
+     <td align="left"><input name="Button3s" type="button" value="HBG.dat" STYLE="background:009900;width: 100%;" STYLE="color:FFFFFF"> 
+     </td>
+    </tr>
+    <tr>   
+     <td align="left"><input name="Button4s" type="button" value="LAN.dat" STYLE="background:009900;width: 100%;" STYLE="color:FFFFFF"> 
+     </td>
+    </tr>
+    <tr>   
+     <td align="left"><input name="Button5s" type="button" value="LEH.dat" STYLE="background:009900;width: 100%;" STYLE="color:FFFFFF"> 
+     </td>
+    </tr>
+    <tr>   
+     <td align="left"><input name="Button6s" type="button" value="RDG.dat" STYLE="background:009900;width: 100%;" STYLE="color:FFFFFF"> 
+     </td>
+    <tr>   
+     <td align="left"><input name="Button7s" type="button" value="West.dat" STYLE="background:009900;width: 100%;" STYLE="color:FFFFFF"> 
+     </td>
+    <tr><td colspan="2">&nbsp</td></tr>
+    <tr>   
+    </tr>
+   </table>
+   </div>
+   </form>
+  </td>
+ </tr>
+</table>
+</div>
+<div align="right"><font size="2" color="#666666">Ver: 7. S. Bonner</font></div>
+
+</body>
+</html>
+
+
+
